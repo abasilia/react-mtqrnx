@@ -53,7 +53,7 @@ const Button = (props) => {
     ) {
       num = props.entry;
       exp = props.entry;
-    } else if (props.name === "equals") {
+    } else if (props.name === "equals" && exp!=0) {
       function calc(obj) {
         return Function('"use strict";return (' + obj + ")")();
       }
