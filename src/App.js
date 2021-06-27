@@ -41,6 +41,7 @@ const Button = (props) => {
       props.operation === "decimal"
     ) {
       num = num + "0";
+      exp = exp + "0";
     }
     if (props.name === "clear") {
       num = "0";
